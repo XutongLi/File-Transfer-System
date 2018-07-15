@@ -1,0 +1,81 @@
+QMessageBox{
+        border: 1px solid rgb(50, 50, 50);
+        background: rgb(50, 50, 50);
+}
+/**********主界面样式**********/
+QWidget#Client {
+        border: 1px solid rgb(50, 50, 50);
+        background: rgb(50, 50, 50);
+}
+
+StyledWidget {
+        qproperty-normalColor: white;
+        qproperty-disableColor: gray;
+        qproperty-highlightColor: rgb(0, 160, 230);
+        qproperty-errorColor: red;
+}
+
+QProgressIndicator {
+        qproperty-color: rgb(175, 175, 175);
+}
+
+QLabel {
+        color: rgb(175, 175, 175);
+}
+
+/**********提示**********/
+QToolTip{
+        border: 1px solid rgb(45, 45, 45);
+        background: white;
+        color: black;
+}
+
+/**********进度条**********/
+QProgressBar{
+        border: none;
+        text-align: center;
+        color: white;
+        background: rgb(175,175, 175);
+}
+QProgressBar::chunk {
+        background: rgb(0, 160, 230);
+}
+
+/**********输入框**********/
+QLineEdit {
+        border-radius: 4px;
+        height: 25px;
+        border: 1px solid rgb(100, 100, 100);
+        background: rgb(72, 72, 73);
+}
+QLineEdit:enabled {
+        color: rgb(175, 175, 175);
+}
+QLineEdit:enabled:hover, QLineEdit:enabled:focus {
+        color: rgb(230, 230, 230);
+}
+QLineEdit:!enabled {
+        color: rgb(155, 155, 155);
+}
+
+/**********按钮**********/
+QPushButton{
+        border-radius: 4px;
+        border: none;
+        width: 75px;
+        height: 25px;
+}
+QPushButton:enabled {
+        background: rgb(68, 69, 73);
+        color: white;
+}
+QPushButton:!enabled {
+        background: rgb(100, 100, 100);
+        color: rgb(200, 200, 200);
+}
+QPushButton:enabled:hover{
+        background: rgb(85, 85, 85);
+}
+QPushButton:enabled:pressed{
+        background: rgb(80, 80, 80);
+}
